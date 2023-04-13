@@ -1,9 +1,72 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.button {
+  margin: 6px 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:active {
+  box-shadow: 0 0 0 white;
+  margin: 8px 0px 4px 0px;
+}
+
+.default {
+  background-color: #fdf7c3;
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: #b2a4ff;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  border: 1px solid #b2a4ff;
+}
+
+.default:hover {
+  background-color: #b2a4ff;
+  color: #fdf7c3;
+}
+
+.primary {
+  background-color: #b2a4ff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: #fdf7c3;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  border: 1px solid #b2a4ff;
+}
+
+.dashed {
+  background-color: #fdf7c3;
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: #b2a4ff;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  border: 1px dashed #b2a4ff;
+}
+.dashed:hover {
+  border: solid;
+}
+
+.text {
+  display: inline-block;
+  color: inherit;
+  border: none;
+  background-color: inherit;
+}
+
+.link {
+  display: inline-block;
+  color: #ffb4b4;
+  text-decoration: underline;
+  border: none;
+  background-color: inherit;
+}
+
+.link:hover,
+.text:hover,
+.primary:hover {
+  transform: scale(1.04);
 }
